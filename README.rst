@@ -22,5 +22,5 @@ While in the directory with the 'data.csv' and 'content4.xml.tmpl' run the follo
 
 The result will be an ODT (openoffice style) content.xml file
 
-This can be added to an unzipped an openoffice document (ODT) to replace the content.xml, then rezip and rename to ODT. The resulting document will contain your merged output.
+This can be added to an unzipped openoffice document (ODT) to replace the content.xml, then rezip and rename to ODT. The resulting document will contain your merged output.
 
