@@ -15,6 +15,8 @@ You will need to install Jinja::
    easy_install Jinja2
 
 About the content4.xml.tmpl file
+-----------------------------------
+
 This file is typically created as follows:
 
 1. Create an OpenOffice Document and include Jinja style syntax for merge fields
