@@ -52,3 +52,33 @@ Still very badly coded, it takes no input and expects to be in the same director
 usage::
 
    python prettyprint.py > cleanedupversion.xml
+
+Typical Project
+-----------------
+Create a file and include fields like::
+
+ {{user['First_Name']}} {{user['Last_Name']}}
+ {{user['Sector_of_Interest']}}
+ {{user['Profile_Resume']}}
+
+These would be derived from the data.csv and then merged into the template.
+
+Create directory for the project::
+
+  mkdir myproject
+  mv myodtfile.odt myproject
+  
+  mkdir myproject/source
+  cd myproject/source
+  unzip ../myodtfile.odt
+
+The result will be a source directory containing the openoffice file structure, including a content.xml file
+
+Run prettyprint on the content.xml::
+
+    path/to/prettyprint.py content.xml > prettycontent.xml
+    cp prettycontent.xml content.xml
+
+Then edit the content.xml to make any customizations.
+
+Finally follow the instructions at the top to create a new merge of the odt.
