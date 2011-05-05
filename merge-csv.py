@@ -1,5 +1,7 @@
 import csv,cgi
 from jinja2 import FileSystemLoader,Environment
+#import xml.dom.minidom
+
 env = Environment(loader=FileSystemLoader('./'))
 
 data = open('data.csv')
@@ -26,4 +28,9 @@ for user in users:
         newuser[key] = unicode(cgi.escape(user[key]), errors='ignore')
     newusers.append(newuser)
 template = env.get_template('content4.xml.tmpl')
-print template.render(users=newusers)
+output =  template.render(users=newusers)
+print output
+
+#xml = xml.dom.minidom.parse(output)
+#print  xml.toprettyxml()
+
