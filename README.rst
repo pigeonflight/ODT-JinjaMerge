@@ -14,6 +14,23 @@ You will need to install Jinja::
 
    easy_install Jinja2
 
+About the content4.xml.tmpl file
+This file is typically created as follows:
+
+1. Create an OpenOffice Document and include Jinja style syntax for merge fields
+
+2. Unpack the document using an unzip program
+
+3. Name the content.xml file content4.xml.tmpl
+
+4. Get a suitable data.csv file with fields that match the content4.xml.tmpl
+
+5. run the merge-csv.py command to execute the merge
+
+6. put the merged output (content.xml file) back into a copy of the unpacked openoffice document
+
+7. zip it up again (rename to odt if necessary)
+
 Usage
 ----------
 While in the directory with the 'data.csv' and 'content4.xml.tmpl' run the following::
